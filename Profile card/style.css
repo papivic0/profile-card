@@ -1,0 +1,98 @@
+body{
+    background-color: darkcyan;
+    background-image: url(image/bg-pattern-top.svg), url(image/bg-pattern-bottom.svg);
+    background-repeat: no-repeat;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-family: 'kumbh sans', sans-serif;
+    font-weight: 400, 700;
+    height: 100%;
+    font-size: 18px;
+
+}
+@media only screen and (max-width: 375px){
+    body{
+        background-size: 110vw !important;
+    }
+    .card{
+        height: auto;
+        width: 300px !important;
+        margin-top: 100px !important;
+        
+    }
+    .card-image{
+        left: 110px !important;
+    }
+}
+@media only screen and (max-width: 1440px){
+    body{
+        background-size: 110vw !important;
+    }
+    .card{
+       margin-top: 150px;
+    }
+}
+.card{
+    width: 400px;
+    height: 360px;
+    border-radius: 22px;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    
+}
+.card-top{
+    border-top-right-radius: 22px;
+    border-top-left-radius: 22px;
+    background-image: url(image/bg-pattern-card.svg);
+    height: 120px;
+}
+.card-image{
+    position: relative;
+    height: 80px;
+    width: 80px;
+    top: 70px;
+    left: 160px;
+    border-radius: 50px;
+    border: 5px solid white;
+    background-image: url(image/image-victor.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.card-middle{
+    height: 140px;
+    text-align: center;
+    line-height: 5px;
+    
+}
+h2{
+    font-size: 20px;
+    padding-top: 20px;
+}
+h3{
+    padding-top: 50px;
+    font-size: 20px;
+}
+h5{
+    font-weight: 10;
+}
+.card-bottom{
+    height: 100px;
+    display: flex;
+    text-align: center;
+    line-height: 5px;
+    border-top: 1px solid gray;
+}
+.followers{
+    height:100px;
+    width: 33.3%;
+}
+.likes{
+    height: 100px;
+    width: 33.3%;
+}
+.photos{
+    height: 100px;
+    width: 33.3%;
+}
